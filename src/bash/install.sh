@@ -65,7 +65,6 @@ export GEM_PATH=$INSTALL_ROOT:$GEM_PATH
 CPANM_VERSION="1.7042"
 WTSI_DNAP_UTILITIES_VERSION="0.5.3"
 ML_WAREHOUSE_VERSION="2.1"
-ALIEN_TIDYP_VERSION="1.4.7"
 NPG_TRACKING_VERSION="85.3"
 NPG_IRODS_VERSION="2.5.0"
 
@@ -124,7 +123,6 @@ cd $TEMP
 # use wget to download tarballs to install
 URLS=(https://github.com/wtsi-npg/perl-dnap-utilities/releases/download/$WTSI_DNAP_UTILITIES_VERSION/WTSI-DNAP-Utilities-$WTSI_DNAP_UTILITIES_VERSION.tar.gz \
 https://github.com/wtsi-npg/ml_warehouse/releases/download/$ML_WAREHOUSE_VERSION/ml_warehouse-$ML_WAREHOUSE_VERSION.tar.gz \
-http://search.cpan.org/CPAN/authors/id/K/KM/KMX/Alien-Tidyp-v$ALIEN_TIDYP_VERSION.tar.gz \
 https://github.com/wtsi-npg/npg_tracking/releases/download/$NPG_TRACKING_VERSION/npg-tracking-$NPG_TRACKING_VERSION.tar.gz \
 https://github.com/wtsi-npg/perl-irods-wrap/releases/download/$NPG_IRODS_VERSION/WTSI-NPG-iRODS-$NPG_IRODS_VERSION.tar.gz )
 
@@ -136,7 +134,6 @@ eval $(perl -Mlocal::lib=$INSTALL_ROOT) # set environment variables
 # install prerequisites from tarfiles
 TARFILES=(WTSI-DNAP-Utilities-$WTSI_DNAP_UTILITIES_VERSION.tar.gz \
 ml_warehouse-$ML_WAREHOUSE_VERSION.tar.gz \
-Alien-Tidyp-v$ALIEN_TIDYP_VERSION.tar.gz \
 npg-tracking-$NPG_TRACKING_VERSION.tar.gz \
 WTSI-NPG-iRODS-$NPG_IRODS_VERSION.tar.gz)
 
